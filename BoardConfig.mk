@@ -31,6 +31,7 @@ endif
 TARGET_OTA_ASSERT_DEVICE := rolex,riva,rova
 
 # Kernel
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TARGET_KERNEL_CONFIG := rova_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/rova-$(TARGET_KERNEL_VERSION)
 
